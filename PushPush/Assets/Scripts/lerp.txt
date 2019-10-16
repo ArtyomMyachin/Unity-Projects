@@ -1,0 +1,12 @@
+		startPosition = transform.position;//Начальное положение
+		t = 0;		//время
+		endPosition = new Vector3(startPosition.x + System.Math.Sign(input.x) * gridSize,
+			                      startPosition.y + System.Math.Sign(input.y) * gridSize, 
+		                          startPosition.z);		//конечное положение
+		factor = 1f;//это для корректировки плавности, подбором ставишь		
+		while (t < 1f) 
+		{
+			t += Time.deltaTime * (moveSpeed/gridSize) * factor;
+			transform.position = Vector3.Lerp(startPosition, endPosition, t);//определяем промежуточную точку, в которой должен оказаться объект за время t
+			yield return null;//это тебе не нужно
+		}

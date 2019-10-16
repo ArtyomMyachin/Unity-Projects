@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicker", "clicker.csproj", "{AD49CA7F-32E1-1613-402B-8D0FD737D72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicker.Editor", "clicker.Editor.csproj", "{39957A0C-FB02-2A4A-E707-100235CB480B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD49CA7F-32E1-1613-402B-8D0FD737D72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD49CA7F-32E1-1613-402B-8D0FD737D72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD49CA7F-32E1-1613-402B-8D0FD737D72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD49CA7F-32E1-1613-402B-8D0FD737D72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39957A0C-FB02-2A4A-E707-100235CB480B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39957A0C-FB02-2A4A-E707-100235CB480B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39957A0C-FB02-2A4A-E707-100235CB480B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39957A0C-FB02-2A4A-E707-100235CB480B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

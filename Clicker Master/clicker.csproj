@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD49CA7F-32E1-1613-402B-8D0FD737D72B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.5.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Unity">
+      <HintPath>Assets\Plugins\Ionic.Zip.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_4Gradients.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_BlackHole.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Blood.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Blur.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_BurningFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Cartoon.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_CircleFade.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Clipping.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Color.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_ColorChange.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_ColorRGB.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_CompressionFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_DesintegrationFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_DestroyedFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Distortion.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_EdgeColor.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_EnergyBar.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Fire.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Flame.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Frozen.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Ghost.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_GoldFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_GoldenFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_GrassFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_GrassMultiFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_GrayScale.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_HSV.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Heat.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Hologram.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Hologram2.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Hologram3.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Ice.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_IcedFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Jelly.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_JellyAutoMove.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Lightning.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_LightningBolt.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Liquid.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Liquify.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_MetalFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Mystic_Distortion.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Negative.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Noise.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_NoiseAnimated.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Normal.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Offset.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Outline.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Pattern.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Pixel.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Pixel8bitsBW.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Pixel8bitsC64.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Pixel8bitsGB.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_PixelDie.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_PlasmaRainbow.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_PlasmaShield.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Posterize.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_SandFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Sepia.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Sharpen.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Shiny_Reflect.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_SkyCloud.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Slim.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Smoke.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_StoneFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Threshold.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_Twist.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\2dxfx_AL\_2dxFX_AL_WoodFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2DxFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_4Gradients.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Additive.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_BlackHole.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Blood.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Blur.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_BurningFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Cartoon.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_CircleFade.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Clipping.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Color.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_ColorChange.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_ColorRGB.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_CompressionFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_DesintegrationFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_DestroyedFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Distortion.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Distortion_Additive.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_EdgeColor.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_EnergyBar.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Fire.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_FireAdditive.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Flame.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Frozen.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Ghost.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GoldFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GoldenFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrassFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrassMultiFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrayScale.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_HSV.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Heat.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Hologram.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Hologram2.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Hologram3.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Ice.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_IcedFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Jelly.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_JellyAutoMove.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Lightning.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_LightningBolt.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Liquid.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Liquify.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_MetalFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Mystic_Distortion.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Mystic_Distortion_Additive.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Negative.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Noise.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_NoiseAnimated.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Offset.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Outline.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pattern.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_PatternAdditive.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pixel.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pixel8bitsBW.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pixel8bitsC64.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pixel8bitsGB.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_PixelDie.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_PlasmaRainbow.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_PlasmaRainbow_Color.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_PlasmaShield.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Posterize.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_SandFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Sepia.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Sharpen.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Shiny_Reflect.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_SkyCloud.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Slim.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Smoke.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_StoneFX.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Teleportation.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Threshold.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Twist.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_WaterAndBackground.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_WaterAndBackgroundDeluxe.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Waterfall.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Wave.cs" />
+    <Compile Include="Assets\2DxFX\Scripts\_2dxFX_WoodFX.cs" />
+    <Compile Include="Assets\Appodeal\Api\Appodeal.cs" />
+    <Compile Include="Assets\Appodeal\AppodealDemo\AppodealDemo.cs" />
+    <Compile Include="Assets\Appodeal\Common\IAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\IAppodealAdsClient.cs" />
+    <Compile Include="Assets\Appodeal\Common\IBannerAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\IInterstitialAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\INonSkippableVideoAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\IPermissionGrantedListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\IRewardedVideoAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Common\ISkippableVideoAdListener.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AndroidAppodealClient.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealBannerCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealInterstitialCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealNonSkippableVideoCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealPermissionCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealRewardedVideoCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\Android\AppodealSkippableVideoCallbacks.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\AppodealAdsClientFactory.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\iOS\AppodealAdsClient.cs" />
+    <Compile Include="Assets\Appodeal\Platforms\iOS\AppodealObjCBridge.cs" />
+    <Compile Include="Assets\Frost\FrostEffect.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\ClickerUpdateParticleMax.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\ColorTweener.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_Base.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_DisableAfterDelay.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_FadeToColour.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_Flash.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_ImpartForce2D.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_MoveTo.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_SnapTo.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_SpinningObject.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_UIFadeToColour.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\FX_UIMoveTo.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\ITweener.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\PositionTweener.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\RotationBySpeedTweener.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Effects\TweenMode.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\ClickEventArgs.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\EventResponder.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\EventResponse.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\EventResponseType.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\GenericResponder.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Event\UpgradeEventArgs.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Managers\ClickManager.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Managers\Manager.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\ClickLabel_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\ClickTotal_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\ConverterDetails_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\MultiCostUpgradeCost_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\OfflineClickerPercentage_Image.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\PerClick_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\ToolTip.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Display\UpgradeDetails_Text.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\AutoClicker.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\AutoClickerWithDependency.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\BaseUpgrade.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\ClickConverter.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\ClickUpgrade.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\Clicker.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\CooldownClicker.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\MultiClickUpgrade.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\OfflineClicker.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\UI\Interactive\ShowObjectUpgrade.cs" />
+    <Compile Include="Assets\IdleClickerKit\Scripts\Utility\Persistable.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorPickerColor.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\EnvelopContent.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIShowControlScheme.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\MinMaxRangeAttribute.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\PropertyBinding.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIBasicSprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFill.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenLetters.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIColorPicker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIInputOnGUI.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\AdManager.cs" />
+    <Compile Include="Assets\Scripts\Click.cs" />
+    <Compile Include="Assets\Scripts\CloseShoppanel.cs" />
+    <Compile Include="Assets\Scripts\GM.cs" />
+    <Compile Include="Assets\Scripts\Reload.cs" />
+    <Compile Include="Assets\Scripts\ReloadLevelPrefs.cs" />
+    <Compile Include="Assets\Scripts\SnowFlakesManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\2DxFX\Resoruces\_2dxFX_Mystic_Distortion_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_4Gradients.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_BlackHole.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Blood.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Blur.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_BurningFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Cartoon.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_CircleFade.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Clipping.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Color.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_ColorChange.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_ColorRGB.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_CompressionFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_DesintegrationFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_DestroyedFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_EdgeColor.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_EnergyBar.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Fire.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Flame.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Frozen.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Ghost.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_GoldFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_GoldenFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_GrassFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_GrassMultiFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_GrayScale.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_HSV.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Heat.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Hologram.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Hologram2.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Hologram3.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Ice.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_IcedFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Jelly.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Lightning.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_LightningBolt.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Liquid.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Liquify.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_MetalFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Mystic_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Negative.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Noise.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_NoiseAnimated.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Normal.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Offset.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Outline.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Pattern.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Pixel.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Pixel8bitsBW.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Pixel8bitsC64.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Pixel8bitsGB.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_PixelDie.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_PlasmaRainbow.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_PlasmaShield.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Posterize.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_SandFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Sepia.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Sharpen.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Shiny_Reflect.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_SkyCloud.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Slim.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Smoke.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_StoneFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Threshold.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_Twist.shader" />
+    <None Include="Assets\2DxFX\Resources1\2dxfx_AL\_2dxFX_AL_WoodFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_4Gradients.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_BlackHole.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Blood.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Blur.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_BurningFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Cartoon.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_CircleFade.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Clipping.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Color.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_ColorChange.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_ColorRGB.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_CompressionFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_DesintegrationFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_DestroyedFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Distortion_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_EdgeColor.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_EnergyBar.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Fire.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_FireAdditive.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Flame.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Frozen.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Ghost.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_GoldFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_GoldenFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_GrassFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_GrassMultiFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_GrayScale.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_HSV.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Heat.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Hologram.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Hologram2.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Hologram3.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Ice.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_IcedFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Jelly.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Lightning.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_LightningBolt.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Liquid.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Liquify.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_MetalFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Mystic_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Negative.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Noise.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_NoiseAnimated.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Offset.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Outline.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Pattern.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_PatternAdditive.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Pixel.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Pixel8bitsBW.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Pixel8bitsC64.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Pixel8bitsGB.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_PixelDie.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_PlasmaRainbow.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_PlasmaRainbow_Color.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_PlasmaShield.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Posterize.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_SandFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Sepia.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Sharpen.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Shiny_Reflect.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_SkyCloud.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Slim.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Smoke.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_StoneFX.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Teleportation.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Threshold.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Twist.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_WaterAndBackground.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_WaterAndBackgroundDeluxe.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Waterfall.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_Wave.shader" />
+    <None Include="Assets\2DxFX\Resources1\_2dxFX_WoodFX.shader" />
+    <None Include="Assets\Frost\HowToUse.txt" />
+    <None Include="Assets\Frost\ImageBlendEffect.shader" />
+    <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+    <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+    <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+    <None Include="Assets\NGUI\Examples\Resources2\Localization.txt" />
+    <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+    <None Include="Assets\NGUI\ReadMe - 3.11.1.txt" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\AppodealAndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\build.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\proguard-project.txt" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\anim\advertisement.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\anim\loading_animation.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\drawable\btn_ad_bg.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\drawable\btnstyle.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\drawable\interstital_ad_body_bg.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\drawable\progressbar.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\drawable\vast_progress_style.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\activity_picks_browser.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\activity_picks_loading.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\cm_activity_full_screen_video.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\cm_activity_picks_interstitial.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\cm_splash_time.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\cm_vast_ad_layout.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\cm_vast_small_view.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\gps_dialog.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\origin_picks_banner_mid.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\layout\origin_picks_banner_smail.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\values-zh-rCN\values-zh-rCN.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\values-zh-rTW\values-zh-rTW.xml" />
+    <None Include="Assets\Plugins\Android\cheetah-mobile\res\values\values.xml" />
+    <None Include="Assets\Plugins\Ionic.Zip.Unity.XML" />
+    <None Include="Assets\Ultimate Game Music Collection\_README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

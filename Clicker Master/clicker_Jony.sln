@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicker_Jony", "clicker_Jony.csproj", "{761E90E2-BD5A-40B9-8A74-CD9703E9A008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicker_Jony.Editor", "clicker_Jony.Editor.csproj", "{1DC8A4D6-248C-4126-7D06-B81B5B3FECF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{761E90E2-BD5A-40B9-8A74-CD9703E9A008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761E90E2-BD5A-40B9-8A74-CD9703E9A008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761E90E2-BD5A-40B9-8A74-CD9703E9A008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761E90E2-BD5A-40B9-8A74-CD9703E9A008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC8A4D6-248C-4126-7D06-B81B5B3FECF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC8A4D6-248C-4126-7D06-B81B5B3FECF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC8A4D6-248C-4126-7D06-B81B5B3FECF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC8A4D6-248C-4126-7D06-B81B5B3FECF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
